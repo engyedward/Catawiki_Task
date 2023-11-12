@@ -21,8 +21,7 @@ namespace CatawikiTask.Pages
         public By btn_Search = By.CssSelector(".c-search-field div div button");
         public By btn_Cookies = By.Id("cookie_bar_agree_button");
 
-        //
-
+        
         public void SearchByKeyword(string searchKeyWork)
         {
             ClickOn(btn_Cookies, "Accept Cookies Button");
