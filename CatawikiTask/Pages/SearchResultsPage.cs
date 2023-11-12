@@ -16,8 +16,8 @@ namespace CatawikiTask.Pages
             this.Wait = wait;
         }
 
-        public By Btn_SaveYourSearch = By.CssSelector("[data-testid='sticky-filters'] [data-testid='save-your-search_button']");
-        public By Links_LotCards = By.CssSelector(".c-extended-lot-card a");
+        private By Btn_SaveYourSearch = By.CssSelector("[data-testid='sticky-filters'] [data-testid='save-your-search_button']");
+        private By Links_LotCards = By.CssSelector(".c-extended-lot-card a");
         
         public bool Verify_SearchResultsPage_Opened()
         {

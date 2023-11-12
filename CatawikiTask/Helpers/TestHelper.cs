@@ -34,7 +34,7 @@ namespace CatawikiTask.Helpers
         /// <param name="locator">By Locator of Element that needs to be Clicked</param>
         /// <param name="text">to be typed in the Element</param>
         /// <param name="locatorDescription">Description of the Element for Logging</param>
-        protected void TypeText(By locator, string text, string locatorDescription = "")
+        protected virtual void TypeText(By locator, string text, string locatorDescription = "")
         {
             try
             {

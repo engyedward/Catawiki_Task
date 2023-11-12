@@ -29,6 +29,7 @@ namespace CatawikiTask.Helpers
         public void CleanUp()
         {
             Driver.Close();
+            Driver.Dispose();
 
         }
     }

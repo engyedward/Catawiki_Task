@@ -18,9 +18,9 @@ namespace CatawikiTask.Pages
             this.Wait = wait;
         }
 
-        By lbl_lotTitle = By.CssSelector("div[class*=main-content] h1");
-        By lbl_bidAmount = By.CssSelector("div[class*=bid-amount]");
-        By lbl_favoritesCounter = By.CssSelector("div[class*=be-lot-details-scrollable-gallery__container] span");
+        private By lbl_lotTitle = By.CssSelector("div[class*=main-content] h1");
+        private By lbl_bidAmount = By.CssSelector("div[class*=bid-amount]");
+        private By lbl_favoritesCounter = By.CssSelector("div[class*=be-lot-details-scrollable-gallery__container] span");
 
 
         public bool Verify_LotDetailsPage_Opened()
