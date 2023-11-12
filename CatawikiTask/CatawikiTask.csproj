@@ -68,7 +68,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Helpers\BaseTest.cs" />
     <Compile Include="Helpers\TestHelper.cs" />
     <Compile Include="Models\Lot.cs" />
