@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CatawikiTask.Helpers
 {
-    class BaseTest : TestHelper
+    class BaseTest : Common
     {
         public TestContext TestContext { get; set; }
 

@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\BaseTest.cs" />
+    <Compile Include="Helpers\Common.cs" />
     <Compile Include="Helpers\TestHelper.cs" />
     <Compile Include="Models\Lot.cs" />
     <Compile Include="Pages\Homepage.cs" />

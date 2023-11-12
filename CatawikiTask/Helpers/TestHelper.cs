@@ -23,6 +23,7 @@ namespace CatawikiTask.Helpers
         /// Global Driver used throughout the TestHelper Functions
         /// </summary>
         protected IWebDriver Driver;
+
         /// <summary>
         /// Global Wait used throughout the TestHelper Functions
         /// </summary>
@@ -96,7 +97,7 @@ namespace CatawikiTask.Helpers
             }
             catch (Exception e)
             {
-                LogIssue("Exception occurred in function \"" + GetCurrentMethod(2) + "\". trying to find button " + locatorDescription + " : " + e.Message);
+                LogIssue("Exception occurred in function \"" + GetCurrentMethod(2) + "\". trying to find " + locatorDescription + " : " + e.Message);
 
                 throw e;
             }
@@ -135,9 +136,7 @@ namespace CatawikiTask.Helpers
         {
             try
             {
-
                 return FindElement(locator).Displayed;
-
             }
             catch (Exception)
             {

@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace CatawikiTask.Pages
 {
-    class Homepage : TestHelper
+    class Homepage : Common
     {
         public Homepage(IWebDriver driver, WebDriverWait wait)
         {
@@ -12,14 +12,16 @@ namespace CatawikiTask.Pages
             this.Wait = wait;
         }
         private By txt_Search = By.CssSelector("[data-testid='search-field']");
-        //private By txt_Search = By.Id("textField11");
         private By btn_Search = By.CssSelector(".c-search-field div div button");
-        private By btn_Cookies = By.Id("cookie_bar_agree_button");
 
-        
-        public void SearchByKeyword(string searchKeyWork)
+
+
+        /// <summary>
+        /// Search By Keyword :  Enter keyword in the Search Box and Clicks Magnifier button
+        /// </summary>
+        /// <param name="searchKeyWork">The Keyword that will be typed in the Search Box</param>
+        public void SearchByKeyword(string searchKeyWork)   
         {
-            ClickOn(btn_Cookies, "Accept Cookies Button");
             TypeText(txt_Search, searchKeyWork, "Search Box");
             ClickOn(btn_Search, "Button Search");
         }
